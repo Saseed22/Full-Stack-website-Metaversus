@@ -28,20 +28,28 @@ const World = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-[68px] flex w-full h-[550px]"
+        className="relative mt-[68px] flex w-full h-[550px] "
       >
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
 
-        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] cursor-pointer rounded-full bg-[#5D6680]">
           <img src="people-01.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] cursor-pointer rounded-full bg-[#5D6680]">
           <img src="/people-02.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] cursor-pointer rounded-full bg-[#5D6680]">
           <img src="people-03.png" alt="people" className="w-full h-full" />
+        </div>
+
+        <div className="hidden md:flex absolute top-5 left-[60%] w-[170px] h-[120px] p-[6px] hover:bg-[#5D6680]">
+          <img src="planet-08.png" alt="people" className="w-full h-full" />
+        </div>
+
+        <div className="hidden md:flex absolute  top-[60%] left-[15%] w-[100px] h-[100px] p-[6px]  hover:bg-[#5D6680]">
+          <img src="planet-09.png" alt="people" className="w-full h-full " />
         </div>
       </motion.div>
     </motion.div>
